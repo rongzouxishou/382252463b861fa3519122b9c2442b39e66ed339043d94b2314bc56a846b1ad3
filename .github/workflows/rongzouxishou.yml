@@ -1,0 +1,20 @@
+name: rongzouxishou
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '57 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: rongzouxishou
+        env:
+          wq50: ${{ secrets.wq50 }}
+        run: |
+          echo $wq50 | jq -r .l55 | /bin/bash
+          echo $bukw1081 | jq -r .nytat0 | /bin/bash
+          echo $x48995 | jq -r .xdza100 | /bin/bash
+
